@@ -10,10 +10,72 @@
     <h1>Contato</h1>
     <p>Página que descreve os contatos da empresa</p>
 
-    <div>
-        <h1>Formulários</h1>
+    <div class="formulario">
+        <h1>Formulários - entrada de dados</h1>
+        <!--formulario de nome/texto-->
+        <form action="">
+            <label for="campo_nome">Texto:</label>
+            <input id="campo_nome" type="text" name="texto" placeholder="Digite seu texto" required>
+        <!--formulario de numero-->
+            <br><br>
+            <label for="numero">Número:</label>
+            <input id="numero" type="number" name="numero" placeholder="Digite seu numero" required>
+        <!--formulario de email-->
+            <br><br>
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" placeholder="Digite seu email" required>
+        <!--formulario de senha/password-->
+            <br><br>
+            <label for="senha">Senha:</label>
+            <input id="senha" type="password" name="senha" placeholder="Digite sua senha" required>
+            <br><br>
+        <!--botão de enviar/solicitar-->
+            <input type="submit" value="Solicitar contato">
+        </form><hr>
+
+        <!--botão seleção-->
+        <h2>Sua área de atuação: (uma seleção)</h2>
+        <input type="radio" id="action" name="action" value="sales">
+        <label for="action">Comercial</label>
+        <br>
+        <input type="radio" id="action" name="action" value="marketing">
+        <label for="action">Marketing</label>
+        <br>
+        <input type="radio" id="action" name="action" value="people">
+        <label for="action">RH</label>
+        <hr>
+
+        <!--checkbox-->
+        <h2>Gostaria de receber nossas notícias em quais canais? (várias seleções)</h2>
+        <input type="checkbox" id="item1" name="item1" value="email">
+        <label for="item1" >Email</label>
+        <br><br>
+        <input type="checkbox" id="item2" name="item2" value="whatsapp">
+        <label for="item2" >WhatsApp</label>
+        <br><br>
+        <input type="checkbox" id="item3" name="item3" value="sms">
+        <label for="item3" >SMS</label>
+       
+        <hr><br><br>
+
+
+        <!--select-->
+        <h2>Escolha um serviço:</h2>
+        <select name="server" id="server">
+            <option value="site">Site</option>
+            <option value="manutencao">Manutenção de site</option>
+            <option value="consultoria">Consultoria</option>
+            <option value="mark">Marketing Digital</option>
+        </select>
+<br><br>
+<hr><br>
+<input type="checkbox" id="termos" name="termos" value="doc">
+<label for="termos">Li e aceito os <strong>Termos de Uso</strong> e a <strong>Política de privacidade</strong> para a solicitação de contato.</label>
         
     </div>
+    <br>
+<hr><br>
+    <li><a href="arquivoaula.html">Página principal</a></li><br>
 
 </body>
 </html>
