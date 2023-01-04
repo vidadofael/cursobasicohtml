@@ -56,17 +56,29 @@
         <input type="checkbox" id="item3" name="item3" value="sms">
         <label for="item3" >SMS</label>
        
-        <hr><br><br>
+        <hr><br>
 
 
         <!--select-->
         <h2>Escolha um serviço:</h2>
         <select name="server" id="server">
+            <option selected disabled value="disabled">Selecione um serviço</option>
             <option value="site">Site</option>
             <option value="manutencao">Manutenção de site</option>
             <option value="consultoria">Consultoria</option>
             <option value="mark">Marketing Digital</option>
         </select>
+<br><br><hr>
+        <!--text -area-->
+        <h2>Digite aqui um resumo de sua solicitação</h2>
+        <textarea required name="textarea" id="textarea" cols="60" rows="10" placeholder="Digite seu texto aqui..."></textarea>
+
+<br>
+        <!--botão genérico-->
+        <button> Enviar</button>
+
+
+
 <br><br>
 <hr><br>
 <input type="checkbox" id="termos" name="termos" value="doc">
